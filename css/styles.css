@@ -1,4 +1,5 @@
 :root {
+   --background-color-fons-hero: #C4C4C4;
    --background-color-white: #ffffff;
    --background-color-fond: #2F303A;
    --text-color-white: #ffffff;
@@ -135,6 +136,13 @@ img {
    color: var(--button-color);
 }
 
+/* ?Контакты */
+
+.contact-list-icon {
+   width: 16px;
+   height: 16px;
+}
+
 .contact-link {
    font-weight: 500;
    line-height: 1.14;
@@ -148,8 +156,10 @@ img {
    padding: 200px 0px;
    align-items: center;
    text-align: center;
-   background-color: var(--background-color-fond);
+   background-color: var(--background-color-fons-hero);
 
+   width: 1600px;
+   height: 600px;
 }
 
 .title .subtitle {
@@ -203,6 +213,13 @@ img {
 .flex-block {
    display: flex;
    gap: 30px;
+}
+
+.flex-block .svg {}
+
+.flex-block-svg {
+   width: 70px;
+   height: 70px;
 }
 
 .subject .section:last-child {
