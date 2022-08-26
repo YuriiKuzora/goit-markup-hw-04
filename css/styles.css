@@ -315,6 +315,13 @@ img {
    color: var(--text-color-silver);
 }
 
+.social-list {
+   display: flex;
+   justify-content: center;
+   column-gap: 10px;
+}
+
+.social-list-
 /* ?Footer */
 
 .footer {
