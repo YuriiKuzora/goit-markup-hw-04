@@ -1,5 +1,5 @@
 :root {
-   --background-color-fons-hero: #C4C4C4;
+   --background-color-fond-hero: #C4C4C4;
    --background-color-white: #ffffff;
    --background-color-fond: #2F303A;
    --text-color-white: #ffffff;
@@ -170,11 +170,15 @@ img {
    padding: 200px 0px;
    align-items: center;
    text-align: center;
-   background-color: var(--background-color-fons-hero);
+   background-color: var(--background-color-fond-hero);
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon/Img-fon.jpg");
+   background-repeat: no-repeat;
 
    width: 1600px;
    height: 600px;
 }
+
+.title-fons {}
 
 .title .subtitle {
    max-width: 696px;
@@ -379,9 +383,19 @@ img {
 /* ?Footer */
 
 .footer {
+   display: flex;
    background-color: var(--background-color-fond);
    padding-top: 60px;
    padding-bottom: 60px;
+
+}
+
+.footer-list {
+   display: flex;
+}
+
+.logo-address {
+   width: 281px;
 }
 
 .logo-footer {
@@ -416,6 +430,28 @@ img {
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ?Приєднуйся */
+
+.web-contact {
+   width: 206px;
+   padding-top: 10px;
+}
+
+.web-contact-list {
+   color: var(--text-color-white);
+   margin-bottom: 20px;
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+}
+
+.web-contact-list .social-list-link {
+   background-color: var(--background-color-fond);
+   background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ?Portfolio */
