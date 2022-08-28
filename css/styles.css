@@ -11,6 +11,8 @@
    --heading-background-color: #F5F4FA;
    --border-items-color: #eeeeee;
    --border-header-color: #ECECEC;
+   --border-coption-color: #AFB1B8;
+   --color-icon: #AFB1B8;
 
 }
 
@@ -86,26 +88,12 @@ img {
    display: flex;
    padding-top: 0;
    justify-content: space-between;
-
 }
 
 .flex-nav {
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-.contact {
-   margin-left: auto;
-   display: flex;
-}
-
-.logo {
-   font-family: 'Raleway';
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
-   color: var(--button-color);
 }
 
 .accent {
@@ -118,11 +106,17 @@ img {
    color: var(--accent-color);
 }
 
-.nav .item:not(:last-child) {
-   margin-right: 50px;
+/* ?Список навигации */
+
+.logo {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   color: var(--button-color);
 }
 
-.contact .item:not(:last-child) {
+.nav .item:not(:last-child) {
    margin-right: 50px;
 }
 
@@ -142,25 +136,41 @@ img {
    display: flex;
 }
 
-.contact-link {
+.contact {
+   margin-left: auto;
+   display: flex;
+}
+
+.contact .item:not(:last-child) {
+   margin-right: 50px;
+}
+
+.contact-link-item {
    display: flex;
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: var(--text-color-silver);
+   border: 1px solid var(--border-coption-color);
 }
 
 .contact-list-icon {
    width: 16px;
    height: 16px;
    margin-right: 10px;
+   fill: var(--text-color-silver);
 }
 
 .site-nav:hover,
 .site-nav:focus,
-.contact-link:hover,
-.contact-link:focus {
+.contact-link-item:hover,
+.contact-link-item:focus {
    color: var(--button-color);
+}
+
+.contact-link-item:hover .contact-list-icon,
+.contact-link-item:focus .contact-list-icon {
+   fill: var(--button-color);
 }
 
 
@@ -209,6 +219,9 @@ img {
 }
 
 .button-text {
+   display: flex;
+   justify-content: center;
+   text-align: center;
    font-weight: 700;
    font-size: 16px;
    line-height: 1.87;
@@ -337,7 +350,7 @@ img {
    column-gap: 10px;
 }
 
-.social-list-link {
+.social-list-user-link {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -347,9 +360,20 @@ img {
    background-color: var(--background-color-white);
 }
 
+.social-list-user-link:hover,
+.social-list-user-link:focus {
+   background-color: var(--button-color);
+}
+
 .social-list-icon {
    width: 20px;
    height: 20px;
+   fill: var(--color-icon);
+}
+
+.social-list-user-link:hover .social-list-icon,
+.social-list-user-link:focus .social-list-icon {
+   fill: var(--text-color-white);
 }
 
 /* ?Section 5 */
@@ -360,7 +384,7 @@ img {
 
 .slogan-list {
    display: flex;
-   gap: 30px;
+   column-gap: 30px;
 }
 
 .slogan-list-item {
@@ -371,13 +395,24 @@ img {
    height: 91px;
 
    background-color: var(--background-color-white);
-   border: 1px solid #AFB1B8;
+   border: 1px solid var(--border-coption-color);
    border-radius: 4px;
+}
+
+.slogan-list-item:hover,
+.slogan-list-item:focus {
+   border: 1px solid var(--button-color);
 }
 
 .slogan-list-icon {
    width: 106px;
    height: 59.35px;
+   fill: var(--color-icon);
+}
+
+.slogan-list-item:hover .slogan-list-icon,
+.slogan-list-item:focus .slogan-list-icon {
+   fill: var(--button-color);
 }
 
 /* ?Footer */
@@ -395,7 +430,8 @@ img {
 }
 
 .logo-address {
-   width: 281px;
+   width: auto;
+   padding-right: 70px;
 }
 
 .logo-footer {
@@ -449,10 +485,59 @@ img {
    text-transform: uppercase;
 }
 
-.web-contact-list .social-list-link {
+.social-list-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
    background-color: var(--background-color-fond);
    background-color: rgba(255, 255, 255, 0.1);
 }
+
+.social-list-link:hover,
+.social-list-link:focus {
+   background-color: var(--button-color);
+}
+
+
+/* ?Підпишіться на розсилку */
+
+/* .sign-up {
+   padding-top: 10px;
+   padding-left: 83px;
+}
+
+.sign-up-form {
+   display: flex;
+}
+
+.input-text {
+   width: 358px;
+   height: 50px;
+   background-color: var(--background-color-fond);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   margin-right: 12px;
+}
+
+.sign-up-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.button-text {
+   margin-right: 10px;
+}
+
+.button-icon {
+   width: 24px;
+   height: 24px;
+} */
+
 
 /* ?Portfolio */
 
